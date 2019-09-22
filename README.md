@@ -42,3 +42,12 @@ JSX
     this.state
     this.setState()
     render
+
+> setState的优点
+
+    可以对更新进行优化，会把大批量的更新合并，减少更新损耗
+    异步更新
+
+### 代码例子
+
+[组件代码例子](http://js.jirengu.com/napicihero/1/edit?html,js,output)
