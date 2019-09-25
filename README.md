@@ -81,7 +81,7 @@ JSX
     父传子：父元素传一个函数给子元素，子元素去调用
     爷传孙：爷元素传给父元素，父元素再传给子元素
 
-    [组件通信例子](http://js.jirengu.com/sigupalami/1/edit?js,output)
+[组件通信例子](http://js.jirengu.com/sigupalami/1/edit?js,output)
 
 ## 组件通信 - eventHub（兄弟组件通信，任意组件之间如何通信）
 
