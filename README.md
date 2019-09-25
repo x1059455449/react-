@@ -51,3 +51,51 @@ JSX
 ### 代码例子
 
 [组件代码例子](http://js.jirengu.com/napicihero/1/edit?html,js,output)
+
+    class App extends React.Component {
+        constructor(props) {
+            super(props)
+        }
+    render() {
+        return (
+            <div>
+                name: {this.props.name},
+                age: {this.props.age}
+            </div>
+        )
+        }
+    }
+    render()
+
+    function render() {
+        ReactDOM.render(
+            <App name="hello" age={18}/>,
+                document.getElementById('root')
+        )
+    }
+
+## 组件通信
+
+### React 父子组件之间如何通信
+
+    父传子：父元素传一个函数给子元素，子元素去调用
+    爷传孙：爷元素传给父元素，父元素再传给子元素
+
+    [组件通信例子](http://js.jirengu.com/sigupalami/1/edit?js,output)
+
+## 组件通信 - eventHub（兄弟组件通信，任意组件之间如何通信）
+
+    1.任意两个组件之间如何通信
+    2.发布订阅模式
+    3.Redux
+
+<!-- https://jsbin.com/decamay/edit?js,output -->
+[http://js.jirengu.com/koyiyidajo/1/edit?html,js,output](http://js.jirengu.com/koyiyidajo/1/edit?html,js,output)
+
+### reduce
+
+store是用来存数据的地方
+reducer对数据的变动
+
+<!-- https://jsbin.com/noxopeg/edit?js,output -->
+[http://js.jirengu.com/senomeyuta/1/edit?js,output](http://js.jirengu.com/senomeyuta/1/edit?js,output)
