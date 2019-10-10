@@ -91,6 +91,7 @@ JSX
 
 <!-- https://jsbin.com/decamay/edit?js,output -->
 [http://js.jirengu.com/koyiyidajo/1/edit?html,js,output](http://js.jirengu.com/koyiyidajo/1/edit?html,js,output)
+[http://js.jirengu.com/wifonewozo/1/edit?js,output](http://js.jirengu.com/wifonewozo/1/edit?js,output)
 
 ### reduce
 
@@ -99,3 +100,70 @@ reducer对数据的变动
 
 <!-- https://jsbin.com/noxopeg/edit?js,output -->
 [http://js.jirengu.com/senomeyuta/1/edit?js,output](http://js.jirengu.com/senomeyuta/1/edit?js,output)
+
+## Redux 是什么(不懂，需重复)
+
+[Redux 的文档和例子](https://redux.js.org/introduction/examples)
+
+### 重要 API
+
+## Redux
+
+1.[Reducer 函数](https://cn.redux.js.org/docs/basics/Reducers.html)
+
+    const reducer = (state, action)=>{
+    if(state === undefined){
+        return {n: 0}
+    }else{
+        if(action.type === 'add'){
+            var newState = {n: state.n + action.payload}
+            return newState
+        }else{
+            return state
+        }
+    }
+    }
+
+2.store
+
+    const store = createStore(reducer)
+
+3.store.subscribe
+
+    store.subscribe(()=>{
+    render()
+    })
+
+4.store.dispatch
+
+    store.dispatch({type:'add', payload: 1})
+
+## React-Redux
+
+1.Provider 标签
+
+    <Provider store={store}>
+        <App />
+    </Provider>
+
+2.connect 函数
+
+    function mapStateToProps(state){
+    return {
+        n: state.n
+    }
+    }
+    function mapDispatchToProps(dispatch) {
+    return {
+        add1: ()=> dispatch({type:'add', payload: 1})
+    }
+    }
+
+    export default connect(mapStateToProps,mapDispatchToProps)(App);
+
+[第一个例子](http://js.jirengu.com/jajovafazi/1/edit?html,output)
+
+[React + Redux 代码]()
+
+[React + Redux + React-Redux 代码]()
+两次截图
