@@ -167,3 +167,14 @@ reducer对数据的变动
 
 [React + Redux + React-Redux 代码]()
 两次截图
+
+## React Context API
+
+[Context](https://reactjs.org/docs/context.html)
+[Context中文版](https://react-1251415695.cos-website.ap-chengdu.myqcloud.com/docs/context.html#when-to-use-context)
+
+Context为局部作用域的全局变量
+
+## React Hooks API
+
+yarn/npm info react version 查看版本号
