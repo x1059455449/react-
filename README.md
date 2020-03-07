@@ -25,6 +25,7 @@ JSX
 ### 第二个例子
 
 [代码优化过的加减法](http://js.jirengu.com/pixinagupe/2/edit?html,js,output)
+[注释版本](http://js.jirengu.com/foxegakaxu/2/edit)
 
     凡是变量就近当前作用域获取
     如果不是要渲染一个字符串或者其他的，都要添加{}
@@ -78,8 +79,10 @@ JSX
 
 ### React 父子组件之间如何通信
 
-    父传子：父元素传一个函数给子元素，子元素去调用
+    父传子：父元素传一个函数给子元素(此时以属性名表现)，子元素去调用父元素传进来的函数(同样也是以属性名表现)
     爷传孙：爷元素传给父元素，父元素再传给子元素
+    function向class传递时，调用要用this.props.xxx
+    class向function传递时，调用要用props.xxx
 
     [组件通信例子](http://js.jirengu.com/sigupalami/1/edit?js,output)
 
