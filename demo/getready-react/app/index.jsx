@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 
-// import './static/common.less'
+import './static/css/common.less'
 
 // class Hello extends React.Component {
 //     render() {
