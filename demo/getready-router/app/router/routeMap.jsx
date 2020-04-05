@@ -18,11 +18,11 @@ class RouteMap extends React.Component{
         console.log(this.props)
         return(
             <Router history={this.props.history} onUpdate={this.onUpdateHandle.bind(this)}>
-            <Route path="/" component={App}>
-                <IndexRoute component={Home}/>
-                <Route path="list" component={List}/>
-                <Route path='detail/:id' component={Detail}/>
-                <Route path="*" component={NotFound}/>
+                <Route path="/" component={App}>
+                    <IndexRoute component={Home}/>
+                    <Route path="list" component={List}/>
+                    <Route path='detail/:id' component={Detail}/>
+                    <Route path="*" component={NotFound}/>
                 </Route>
             </Router>
         )
